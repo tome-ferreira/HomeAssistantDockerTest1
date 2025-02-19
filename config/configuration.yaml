@@ -1,0 +1,22 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# InfluxDB Configuration (FIXED)
+influxdb:
+  api_version: 2
+  host: influxdb
+  port: 8086
+  token: "LqEJrhKR5CVSPqoU2XAvVa6-_7JTK1XNTkK0qlD4f6StDU09pzsBK5m11g8p4qMxqC_XZkmIhPYzDMdittVW2w=="
+  organization: "Teste"
+  bucket: "homeassistant"
+  max_retries: 3
+  default_measurement: state
+  ssl: false
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml

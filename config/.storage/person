@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "tome_ferreira",
+        "name": "Tomé Ferreira",
+        "user_id": "b086665829734f84b8639116d152a8da",
+        "device_trackers": []
+      }
+    ]
+  }
+}

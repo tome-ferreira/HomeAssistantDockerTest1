@@ -1,0 +1,29 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:latest
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "8123:8123"
+    environment:
+      - TZ=Europe/Lisbon
+    volumes:
+      - ./config:/config
+  influxdb:
+    container_name: influxdb
+    image: influxdb:latest
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+    environment:
+      - INFLUXDB_DB=homeassistant
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=Str0ngP@ssw0rd
+      - INFLUXDB_USER=ha
+      - INFLUXDB_USER_PASSWORD=Str0ngP@ssw0rd
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+volumes:
+  influxdb_data:  
+  homeassistant_config:
