@@ -12,10 +12,32 @@ influxdb:
   max_retries: 3
   default_measurement: state
   ssl: false
+  include:
+    entities:
+      - sensor.toggle_numeric_state
+
+template:
+  - sensor:
+      - name: "Toggle Numeric State"
+        unique_id: toggle_numeric_state
+        state: >
+          {% if is_state('input_boolean.test_toggle_1', 'on') %}
+            1
+          {% else %}
+            0
+          {% endif %}
+        unit_of_measurement: "state"
+
 
 # Load frontend themes from the themes folder
 frontend:
   themes: !include_dir_merge_named themes
+
+input_boolean:
+  test_toggle_1:
+    name: Test Toggle 1
+    icon: mdi:power
+
 
 automation: !include automations.yaml
 script: !include scripts.yaml

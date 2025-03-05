@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.tome_ferreira"
+              ]
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_inicio",
+              "show_forecast": false
+            },
+            {
+              "show_name": true,
+              "show_icon": true,
+              "type": "button",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "entity": "input_boolean.test_toggle_1",
+              "show_state": true
+            }
+          ],
+          "badges": [
+            {
+              "type": "entity",
+              "entity": "sun.sun"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

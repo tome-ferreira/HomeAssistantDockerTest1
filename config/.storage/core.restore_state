@@ -4,19 +4,29 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.tome_ferreira","state":"unknown","attributes":{"editable":true,"id":"tome_ferreira","device_trackers":[],"source":"person.tome_ferreira","user_id":"b086665829734f84b8639116d152a8da","friendly_name":"Tomé Ferreira"},"last_changed":"2025-02-19T17:30:18.283790+00:00","last_reported":"2025-02-19T17:30:18.283790+00:00","last_updated":"2025-02-19T17:30:18.283790+00:00","context":{"id":"01JMFM5B9B24W265Y0S1AWZ1Y5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.tome_ferreira","state":"unknown","attributes":{"editable":true,"id":"tome_ferreira","device_trackers":[],"user_id":"b086665829734f84b8639116d152a8da","friendly_name":"Tomé Ferreira"},"last_changed":"2025-02-28T10:31:44.416942+00:00","last_reported":"2025-02-28T10:31:48.688077+00:00","last_updated":"2025-02-28T10:31:48.688077+00:00","context":{"id":"01JN61SH6G43FF1R6FX0QEE4Z6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-02-19T17:30:26.257852+00:00"
+      "last_seen": "2025-02-28T10:58:52.884802+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-02-19T17:30:20.862870+00:00","last_reported":"2025-02-19T17:30:20.862870+00:00","last_updated":"2025-02-19T17:30:20.862870+00:00","context":{"id":"01JMFM5DSY66Z23VG6EB9QT7KS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"2025-02-20T16:48:16.749135+00:00","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-02-28T10:31:45.638084+00:00","last_reported":"2025-02-28T10:31:45.638084+00:00","last_updated":"2025-02-28T10:31:45.638084+00:00","context":{"id":"01JN61SE768X66CVH5KCB6C52S","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-02-19T17:30:26.257852+00:00"
+      "last_seen": "2025-02-28T10:58:52.884802+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-02-19T17:30:26.219199+00:00","last_reported":"2025-02-19T17:30:26.219199+00:00","last_updated":"2025-02-19T17:30:26.219199+00:00","context":{"id":"01JMFM5K1BMFVN2K47D9ASA32P","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_boolean.test_toggle_1","state":"on","attributes":{"editable":false,"icon":"mdi:power","friendly_name":"Test Toggle 1"},"last_changed":"2025-02-28T10:58:21.144492+00:00","last_reported":"2025-02-28T10:58:21.144492+00:00","last_updated":"2025-02-28T10:58:21.144492+00:00","context":{"id":"01JN63A4ARWCA6DPV7QN6B11R8","parent_id":null,"user_id":"b086665829734f84b8639116d152a8da"}},
       "extra_data": null,
-      "last_seen": "2025-02-19T17:30:26.257852+00:00"
+      "last_seen": "2025-02-28T10:58:52.884802+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-02-28T10:31:48.504429+00:00","last_reported":"2025-02-28T10:31:48.504429+00:00","last_updated":"2025-02-28T10:31:48.504429+00:00","context":{"id":"01JN61SH0RRRNRZWNH189GDHBT","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-02-28T10:58:52.884802+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.log_toggle_to_influxdb","state":"on","attributes":{"last_triggered":"2025-02-27T16:31:22.159563+00:00","mode":"single","current":0,"friendly_name":"Log Toggle to InfluxDB"},"last_changed":"2025-02-27T16:29:03.835950+00:00","last_reported":"2025-02-27T16:31:22.162291+00:00","last_updated":"2025-02-27T16:31:22.162291+00:00","context":{"id":"01JN43Z61F12XV05MKXPRQ32N0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-02-27T16:38:51.315590+00:00"
     }
   ]
 }

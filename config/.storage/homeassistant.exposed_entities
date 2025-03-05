@@ -25,6 +25,13 @@
             "should_expose": false
           }
         }
+      },
+      "automation.log_toggle_to_influxdb": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
       }
     }
   }

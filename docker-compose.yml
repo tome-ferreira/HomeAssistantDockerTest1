@@ -10,6 +10,8 @@ services:
       - TZ=Europe/Lisbon
     volumes:
       - ./config:/config
+    depends_on:
+      - influxdb
   influxdb:
     container_name: influxdb
     image: influxdb:latest
@@ -24,6 +26,20 @@ services:
       - INFLUXDB_USER_PASSWORD=Str0ngP@ssw0rd
     volumes:
       - influxdb_data:/var/lib/influxdb2
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - influxdb
 volumes:
   influxdb_data:  
   homeassistant_config:
+  grafana_data:
