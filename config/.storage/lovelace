@@ -16,6 +16,16 @@
               ]
             },
             {
+              "show_name": true,
+              "show_icon": true,
+              "type": "button",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "entity": "input_boolean.test_toggle_1",
+              "show_state": true
+            },
+            {
               "type": "weather-forecast",
               "entity": "weather.forecast_inicio",
               "show_forecast": false
@@ -27,7 +37,7 @@
               "tap_action": {
                 "action": "toggle"
               },
-              "entity": "input_boolean.test_toggle_1",
+              "entity": "input_boolean.test_toggle_2",
               "show_state": true
             }
           ],

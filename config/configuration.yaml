@@ -14,7 +14,7 @@ influxdb:
   ssl: false
   include:
     entities:
-      - sensor.toggle_numeric_state
+      - sensor.toggle_numeric_state   
 
 template:
   - sensor:
@@ -37,6 +37,19 @@ input_boolean:
   test_toggle_1:
     name: Test Toggle 1
     icon: mdi:power
+  test_toggle_2:
+    name: Test Toggle 2
+    icon: mdi:power
+
+rest_command:
+  log_test_toggle_2_influxdb:
+    url: "http://influxdb:8086/api/v2/write?org=Teste&bucket=homeassistant&precision=s"
+    method: post
+    headers:
+      Authorization: "Token LqEJrhKR5CVSPqoU2XAvVa6-_7JTK1XNTkK0qlD4f6StDU09pzsBK5m11g8p4qMxqC_XZkmIhPYzDMdittVW2w=="
+      Content-Type: "text/plain; charset=utf-8"
+    payload: "{{ 'test_toggle_2 value=1' if is_state('input_boolean.test_toggle_2', 'on') else 'test_toggle_2 value=0' }}"
+
 
 
 automation: !include automations.yaml

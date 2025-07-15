@@ -40,6 +40,6 @@ services:
     depends_on:
       - influxdb
 volumes:
-  influxdb_data:  
+  influxdb_data:   
   homeassistant_config:
   grafana_data:

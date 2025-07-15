@@ -1,0 +1,6 @@
+alias: Log Test Toggle 2 to InfluxDB
+trigger:
+  - platform: state
+    entity_id: input_boolean.test_toggle_2
+action:
+  - service: rest_command.log_test_toggle_2_influxdb
